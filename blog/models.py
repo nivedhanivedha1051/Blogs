@@ -12,11 +12,10 @@ class Category(models.Model):
 
     def __str__(self):
         return self.category_name
-
-
+    
 STATUS_CHOICES = (
     ("Draft", "Draft"),
-    ("Published", "Published")
+    ("Published", "Published"),
 )
 
 
