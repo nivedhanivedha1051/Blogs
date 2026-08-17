@@ -11,9 +11,6 @@ urlpatterns = [
     path('category/', include('blog.urls')),
     path('blogs/<slug:slug>/', Blogview.blogs, name='blogs'),
 
-    # Search endpoint
-    path('blog/search/', Blogview.search, name='search'),
-
     # Register
     path('register/', views.register, name='register'),
     path('login/', views.login, name='login'),
